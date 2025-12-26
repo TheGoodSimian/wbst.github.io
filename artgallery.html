@@ -1,0 +1,134 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintings | [Your Name]'s Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .blog-subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .painting-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            height: 280px;
+            aspect-ratio: 16/9;
+        }
+        
+        .painting-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .painting-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .painting-card:hover img {
+            transform: scale(1.03);
+        }
+        
+        .painting-card h3 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            padding: 0 10px;
+            text-align: center;
+            background: rgba(255,255,255,0.95);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .gallery-footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+        
+        .back-to-blog {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+        
+        .back-to-blog:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Paintings</h1>
+        <p class="blog-subtitle">A collection of my photography and painting projects from recent exhibitions and personal experiments</p>
+    </header>
+
+    <div class="gallery">
+        <div class="painting-card">
+            <img src="https://via.placeholder.com/280x169" alt="Summer Landscape">
+            <h3>Summer Landscape</h3>
+        </div>
+        <div class="painting-card">
+            <img src="https://via.placeholder.com/280x169" alt="Urban Noir">
+            <h3>Urban Noir</h3>
+        </div>
+        <div class="painting-card">
+            <img src="https://via.placeholder.com/280x169" alt="Coastal Dawn">
+            <h3>Coastal Dawn</h3>
+        </div>
+    </div>
+
+    <div class="gallery-footer">
+        <p><a href="index.html" class="back-to-blog">Back to Blog Home</a></p>
+        <p>Photos and paintings created with passion for visual storytelling</p>
+    </div>
+</body>
+</html>
