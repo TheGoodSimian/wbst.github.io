@@ -81,7 +81,28 @@ h1 {
 
 
 /* Subtitle anchored inside card */
-.painting-card-tall h3 {
+.painting-card-wide h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #2c3e50;
+    background: rgba(255,255,255,0.95);
+}
+
+.painting-card-wide img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+/* Subtitle anchored inside card */
+.painting-card-wide h3 {
     position: absolute;
     bottom: 0;
     left: 0;
