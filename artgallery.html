@@ -50,9 +50,19 @@ h1 {
 }
 
 /* Card is now size-stable */
-.painting-card {
+.painting-card-tall {
     position: relative;
-    aspect-ratio: 5 / 6;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painting-card-wide {
+    position: relative;
+    aspect-ratio: 5 / 4;
     overflow: hidden;
     border-radius: 8px;
     background: #fff;
@@ -115,22 +125,22 @@ h1 {
     </header>
 
     <div class="gallery">
-        <div class="painting-card">
+        <div class="painting-card-tall">
             <img src="./res/vibrant-mountainscape.jpg" alt="Vibrant Mountain Landscape">
             <h3>Vibrant Mountains</h3>
         </div>
              
-        <div class="painting-card">
+        <div class="painting-card-tall">
             <img src="./res/night-mountain.jpeg" alt="Dark Mountain">
             <h3>Dark Mountain</h3>
         </div>
 
-        <div class="painting-card">
+        <div class="painting-card-tall">
             <img src="./res/607508660_17895596160369956_3709628078915898072_n.jpg" alt="Writing in Fire">
             <h3>Writing in Fire</h3>
         </div>
         
-        <div class="painting-card">
+        <div class="painting-card-wide">
             <img src="./res/607653268_17895596076369956_8853265599939620810_n.jpg" alt="Blue Tapestry">
             <h3>Blue Tapestry</h3>
         </div>
