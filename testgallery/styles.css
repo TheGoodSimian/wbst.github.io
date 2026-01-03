@@ -21,10 +21,3 @@
     box-sizing: border-box;
   }
 }
-
-// Extra
-p {
-  background: #ccc;
-  padding: 20px;
-  margin: 20px 0;
-}
