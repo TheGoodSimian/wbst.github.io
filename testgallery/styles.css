@@ -1,6 +1,30 @@
-.grid {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  grid-template-rows: masonry;
+.masonry {
+  column-gap: 3px;
+  column-count: 4;
+  max-width: 100%;
+}
+
+.item {
+  box-sizing: border-box;
+  padding: 0px;
+  object-fit: contain;
+  margin-bottom: 3px;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+// Extra
+p {
+  background: #ccc;
+  padding: 20px;
+  margin: 20px 0;
 }
