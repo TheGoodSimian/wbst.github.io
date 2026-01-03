@@ -1,23 +1,31 @@
-.masonry {
-  column-gap: 3px;
-  column-count: 4;
-  max-width: 100%;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.2em sans-serif;
+}
+
+.grid {
+  padding: 10px;
+  border: 2px solid #f76707;
+  border-radius: 5px;
+  background-color: #fff4e6;
 }
 
 .item {
-  box-sizing: border-box;
-  padding: 0px;
-  object-fit: contain;
-  margin-bottom: 3px;
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  color: #d9480f;
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-rows: masonry;
+}
 
-  &__content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    width: 100%;
-    box-sizing: border-box;
-  }
+.span-2 {
+  grid-column-end: span 2;
 }
